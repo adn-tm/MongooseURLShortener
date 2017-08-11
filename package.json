@@ -1,45 +1,103 @@
 {
-    "name": "mongoose-url-shortener",
-    "description": "mongoose-url-shortener",
-    "version": "1.0.1",
-    "author": {
-        "name": "DropShape",
-        "email": "admin AT dropshape.com"
-    },
-    "keywords": [
-        "url shortener",
-        "bitly",
-        "tinyurl",
-        "mongoose"
-    ],
-    "scripts": {
-        "test": "./node_modules/jasmine-node/bin/jasmine-node test/ --verbose --color --captureExceptions"
-    },
-    "main": "index",
-    "engines": {
-        "node": ">=0.10.x"
-    },
-    "bugs": {
-        "url": "https://github.com/dropshape/mongooseurlshortener/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/dropshape/mongooseurlshortener"
-    },
-    "homepage": "https://github.com/dropshape/mongooseurlshortener",
-    "readmeFilename": "README.md",
-    "dependencies": {
-        "lodash": "~1.3.1",
-        "shortid": "~2.0.0",
-        "q": "~0.9.7"
-    },
-    "devDependencies": {
-        "grunt": "0.4.1",
-        "jasmine-node": "https://github.com/mccormicka/jasmine-node/archive/exclusive-tests.tar.gz",
-        "grunt-contrib-watch": "0.3.1",
-        "grunt-contrib-jshint": "0.4.3",
-        "grunt-jasmine-node": "~0.1.0",
-        "mongoose": "~3.6.16",
-        "mockgoose": "~1.0.2"
+  "_args": [
+    [
+      {
+        "raw": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+        "spec": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:adn-tm/MongooseURLShortener.git#master",
+          "sshUrl": "git+ssh://git@github.com/adn-tm/MongooseURLShortener.git#master",
+          "httpsUrl": "git+https://github.com/adn-tm/MongooseURLShortener.git#master",
+          "gitUrl": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+          "shortcut": "github:adn-tm/MongooseURLShortener#master",
+          "directUrl": "https://raw.githubusercontent.com/adn-tm/MongooseURLShortener/master/package.json"
+        }
+      },
+      "/Users/dima/Documents/GitHub/odata"
+    ]
+  ],
+  "_from": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+  "_id": "mongoose-url-shortener@1.0.1",
+  "_inCache": true,
+  "_location": "/mongoose-url-shortener",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+    "spec": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:adn-tm/MongooseURLShortener.git#master",
+      "sshUrl": "git+ssh://git@github.com/adn-tm/MongooseURLShortener.git#master",
+      "httpsUrl": "git+https://github.com/adn-tm/MongooseURLShortener.git#master",
+      "gitUrl": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+      "shortcut": "github:adn-tm/MongooseURLShortener#master",
+      "directUrl": "https://raw.githubusercontent.com/adn-tm/MongooseURLShortener/master/package.json"
     }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git://github.com/adn-tm/MongooseURLShortener.git#77f7ce519e20987c30b556186238577ea3f67dcb",
+  "_shasum": "6b56da7bcd9312169a2cb345c250e1a57c9e0621",
+  "_shrinkwrap": null,
+  "_spec": "git://github.com/adn-tm/MongooseURLShortener.git#master",
+  "_where": "/Users/dima/Documents/GitHub/odata",
+  "author": {
+    "name": "DropShape",
+    "email": "admin AT dropshape.com"
+  },
+  "bugs": {
+    "url": "https://github.com/dropshape/mongooseurlshortener/issues"
+  },
+  "dependencies": {
+    "lodash": "~1.3.1",
+    "q": "~0.9.7",
+    "perma": "~2.0.0"
+  },
+  "description": "mongoose-url-shortener",
+  "devDependencies": {
+    "grunt": "0.4.1",
+    "grunt-contrib-jshint": "0.4.3",
+    "grunt-contrib-watch": "0.3.1",
+    "grunt-jasmine-node": "~0.1.0",
+    "jasmine-node": "https://github.com/mccormicka/jasmine-node/archive/exclusive-tests.tar.gz",
+    "mockgoose": "~1.0.2",
+    "mongoose": "~3.6.16"
+  },
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "gitHead": "77f7ce519e20987c30b556186238577ea3f67dcb",
+  "homepage": "https://github.com/dropshape/mongooseurlshortener",
+  "keywords": [
+    "url shortener",
+    "bitly",
+    "tinyurl",
+    "mongoose"
+  ],
+  "main": "index",
+  "name": "mongoose-url-shortener",
+  "optionalDependencies": {},
+  "readme": "###MongooseURLShortener\n\nPlease Share on Twitter if you like #MongooseURLShortener\n\n<a href=\"https://twitter.com/intent/tweet?hashtags=MongooseURLShortener&amp;&amp;text=Check%20out%20this%20repo%20on%20github&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fgithub.com%2Fdropshape&amp;via=dropshape\" style=\"float:right\">\n<img src=\"https://raw.github.com/dropshape/MongooseURLShortener/master/twittershare.png\">\n</a>\n\nA simple URL Shortening library for NodeJS using [Promises/A+](http://promises-aplus.github.io/promises-spec/) results.\n\n####Installation\n\n    npm install mongoose-url-shortener --save\n\n####API\n    var Shortener = require(\"mongoose-url-shortener\");\n    //Setup Mongoose\n    var connection = require('mongoose').connect('mongodb:testing');\n    //Initialize Shortener\n    var urlShotener = new Shortener.MongooseURLShortener(connection, options);\n\n\n\n#####Options\n    {\n        seed:12345,\n        schema: {\n            customSchemaValue:Number,\n            customSchemaObj:{}\n        },\n        hits: true // include and calculate hits per link, default is false\n    }\n\n####Use as Express router\n\n var Shortener = require(\"mongoose-url-shortener\");\n var express=require('express');\n var connection = require('mongoose').connect('mongodb:testing');\n \n .....\n    var app = express();\n    Shortener.setRouter(app, connection, {\n        domain: \"http://path.to.this.domian\",\n        tinyUrlPrefix: \"/z\" , // \"/z\" is default value\n    })\n\n    This func add 2 routes:\n        GET http://path.to.this.domian/z/:hash route for decoding short URL\n            It does 301 redirection to decoded URL\n        POST http://path.to.this.domian/z route for encoding short URL\n            JSON body must be an object {\"url\": \"http://path.to.this.domian/readl/long/url/adress#with_long_hash\"}\n\n**Seed**\nOptional value to use for generating short url's. You must always use the same seed otherwise you will not be able to resolve short urls' back to their original url.\n\n**Schema**\nOptional schema properties for the Mongoose object. You can then pass the extra values you define here to be saved along with the URL when shortening or resolving\n\n#####Shorten\nShorten will either create a new short url in your database or resolve to a previously shortened URL.\n\n    url = 'http://www.google.com';\n    data = { 'any data you want to record with the short url' : true }\n    var promise = urlShortener.shorten(url, data);\n    promise.then(function(url){\n        console.log(url.hash);\n        //aGasjn1Ho\n    }).fail(function(err){\n        console.error('Error creating short url', err);\n    });\n\n#####Resolve\nResolve will return the original URL before shortening if one is available in the database.\n\n    hash = 'aGasjn1Ho';\n    data = {ip:'127.0.0.1'};\n    var result = urlShotener.resolve(hash, data);\n    result.then(function(url){\n    console.log(url );\n    // { \n    //    type: 'MongooseURLShortener', \n    //    url: 'http://www.google.com', \n    //    hash:'aGasjn1Ho',\n    //    hits:{\n    //        {ip:'127.0.0.1},\n    //        {ip:'127.0.0.1},\n    //    },\n    //    totalHits: 2\n    //}\n    }).fail(function(err){});\n\n**data** is an optional object you would like to be saved with each resolution of a URL and can be used for such things\nas analytics tracking.\n\nCheck out [NodeTinyUrl](https://github.com/dropshape/NodeTinyUrl) for a working implementation\n\nPlease Share on Twitter if you like #MongooseURLShortener\n\n<a href=\"https://twitter.com/intent/tweet?hashtags=MongooseURLShortener&amp;&amp;text=Check%20out%20this%20repo%20on%20github&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fgithub.com%2Fdropshape&amp;via=dropshape\" style=\"float:right\">\n<img src=\"https://raw.github.com/dropshape/MongooseURLShortener/master/twittershare.png\">\n</a>\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dropshape/mongooseurlshortener.git"
+  },
+  "scripts": {
+    "test": "./node_modules/jasmine-node/bin/jasmine-node test/ --verbose --color --captureExceptions"
+  },
+  "version": "1.0.1"
 }
