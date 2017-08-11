@@ -2,4 +2,4 @@
 
 var Shortener = require('./lib/MongooseURLShortener');
 
-exports = module.exports.MongooseURLShortener = Shortener;
+module.exports = module.exports.MongooseURLShortener = Shortener;
