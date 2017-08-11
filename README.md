@@ -13,11 +13,13 @@ A simple URL Shortening library for NodeJS using [Promises/A+](http://promises-a
     npm install mongoose-url-shortener --save
 
 ####API
-    
+    var Shortener = require("mongoose-url-shortener");
     //Setup Mongoose
     var connection = require('mongoose').connect('mongodb:testing');
     //Initialize Shortener
-    var urlShotener = MongooseURLShortener(connection, options);
+    var urlShotener = new Shortener.MongooseURLShortener(connection, options);
+
+
 
 #####Options
     {
@@ -28,6 +30,26 @@ A simple URL Shortening library for NodeJS using [Promises/A+](http://promises-a
         },
         hits: true // include and calculate hits per link, default is false
     }
+
+####Use as Express router
+
+ var Shortener = require("mongoose-url-shortener");
+ var express=require('express');
+ var connection = require('mongoose').connect('mongodb:testing');
+ 
+ .....
+    var app = express();
+    Shortener.setRouter(app, connection, {
+        domain: "http://path.to.this.domian",
+        tinyUrlPrefix: "/z" , // "/z" is default value
+    })
+
+    This func add 2 routes:
+        GET http://path.to.this.domian/z/:hash route for decoding short URL
+            It does 301 redirection to decoded URL
+        POST http://path.to.this.domian/z route for encoding short URL
+            JSON body must be an object {"url": "http://path.to.this.domian/readl/long/url/adress#with_long_hash"}
+
 **Seed**
 Optional value to use for generating short url's. You must always use the same seed otherwise you will not be able to resolve short urls' back to their original url.
 
