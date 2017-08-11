@@ -25,7 +25,8 @@ A simple URL Shortening library for NodeJS using [Promises/A+](http://promises-a
         schema: {
             customSchemaValue:Number,
             customSchemaObj:{}
-        }
+        },
+        hits: true // include and calculate hits per link, default is false
     }
 **Seed**
 Optional value to use for generating short url's. You must always use the same seed otherwise you will not be able to resolve short urls' back to their original url.
