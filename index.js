@@ -9,7 +9,7 @@ module.exports.MongooseURLShortener = Shortener;
 
 var express = require('express');
 
-module.exports.setRouter = function(app, connection, config) {
+module.exports.router = function router(connection, config) {
 	
 	var router = express.Router();
 	var domain = config.domain.replace(/\/$/, "")
@@ -40,5 +40,9 @@ module.exports.setRouter = function(app, connection, config) {
 		});
 	});
 
-	app.use("/", router);
+	return router;
+}
+
+module.exports.setRouter = function(app, connection, config) {
+	app.use("/", router(connection, config) );
 }
